@@ -1,0 +1,84 @@
+#account-icon {
+      font-size: 15px; 
+      transition: transform 0.3s ease-in-out; 
+    }
+
+    #account-icon:hover {
+      transform: scale(1.2); 
+    }
+
+    .reservation-details{
+      text-align: center;
+    }
+    
+    .reservation-details h1{
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .reservation-details p{
+      font-size: 15px;
+    }
+
+    .form-group{
+      margin-bottom: 2rem;
+    }
+
+    .reservation-form textarea{
+      height: 100px;
+      resize: none;
+    }
+
+
+.reservation-form input,
+.reservation-form textarea{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  padding-bottom: 0.2rem;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.reservation-form{
+  display: block;
+  margin: 5rem 2rem 5rem 3rem;
+  width: 800px;
+  background-color: white;
+  border: 1px solid  rgb(156, 118, 22);
+  padding: 2rem;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form-group select{
+  width: 130px;
+  padding: 8px 15px;
+  width: 200px; 
+  margin: 0 0 0 1rem;
+}
+
+.hidden {
+  border-bottom: 2px solid rgb(156, 118, 22);
+  border-top: 2px solid rgb(156, 118, 22);
+  padding: 2rem 3rem;
+  margin: 2rem 3rem;
+  
+}
+
+.form-group input:focus,
+.form-group textarea{
+  outline: none;
+}

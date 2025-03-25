@@ -1,0 +1,289 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-color: #fcf5e9;
+  --container-normal: 1100px;
+  --container-narrow: 900px;
+  --container-wide: 1400px;
+  --dark-color: #333;
+}
+
+body{
+  font-family: 'Open sans', sans-serif;
+  line-height: 1.6;
+  
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+/* container */
+.container{
+  max-width: var(--container-normal);
+  margin: 0 auto;
+  padding:0 1.5rem;
+  
+}
+
+.container-sm{
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+}
+
+.container-lg{
+  max-width: var(--container-wide);
+}
+
+/* button */
+.btn {
+  padding: 0.2rem 2rem;
+  background-color: white;
+  border: 2px solid rgb(156, 118, 22);
+  color: rgb(156, 118, 22);
+  font-weight: 600;
+  border-radius: 40px;
+  transition: background-color 0.3s ease;
+}
+
+
+.btn:hover {
+  background-color: rgb(156, 118, 22);
+  color: white;
+}
+
+
+/* header */
+.header .logo{
+  width: 120px;
+}
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem auto;
+}
+
+
+.header-flex .mainmenu{
+  display: flex;
+  gap: 2px;
+}
+
+.header .mainmenu a:not(.login){
+  padding: 0.5rem 1rem;
+  position: relative;
+  color: black;
+  font-size: 14PX;
+}
+
+.header .mainmenu a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1.5px;
+  background-color: rgb(156, 118, 22);
+  transition: width 0.3s ease-out; 
+}
+
+.header .mainmenu a:not(.current):not(.login):hover::before {
+  width: 100%;
+  left: 0;
+  transition: width 0.3s ease-out;
+}
+
+.header .mainmenu .current {
+  border-bottom: none;
+  font-weight: 600;
+}
+
+.sitemap a:hover{
+  border-bottom: 1.5px solid #333;
+}
+
+.login{
+  margin-left: 25px;
+  font-size: 14px ;
+}
+
+/* body_menu */
+
+.body_menu{
+  padding: 4rem 2rem;
+}
+
+.details_grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.details_grid-content {
+  max-width: 500px;
+  width: 100%;
+  font-size: 15px;
+}
+
+
+.details_grid-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: rgb(156, 118, 22);
+}
+
+.details_grid-description {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  
+}
+
+.element-item{
+  margin-right: 2rem;
+  width: 100%;
+}
+
+.element-item img{
+  
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* gallery */
+.gallery-flex{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item{
+  width: calc(33.333% - 20px);
+}
+
+.gallery-item img{
+  border-radius: 10px;
+}
+
+
+/* intro */
+.intro {
+  justify-content: center;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 5px; 
+  border: 2px solid rgb(156, 118, 22);
+}
+
+
+.intro_content {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 6rem 6rem;
+  display: flex;
+  position: relative;
+  inset: 0;
+}
+
+.intro_content p{
+  margin: 2rem auto;
+}
+
+/* footer image */
+
+.footer_image-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+}
+
+
+/* footer */
+.footer{
+  border-top: 1px solid gray;
+  margin-top: 2rem;
+  padding: 2rem 1.5rem;
+}
+
+.footer .footer-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer img{
+  width: 100px;
+  height: 70px;
+  margin-bottom: 1rem;
+}
+
+.footer h4{
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.hours, 
+.sitemap{
+  margin-bottom: 2rem;
+}
+
+.reserve p{
+  width: 350px;
+  font-size: 13px;
+  margin-top: 2rem;
+}
+
+.sitemap a,
+.hours ul,
+.contactdet ul{
+  font-size: 13px;
+}
+
+.reserve h4 {
+  margin-bottom: 1.4rem;
+}
+
+.social a:hover {
+  opacity: 0.9;
+}
+
+

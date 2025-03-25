@@ -1,0 +1,38 @@
+.promotion-header{
+  position: relative; 
+  margin-bottom: 50px;
+}
+
+.promotion-header img{
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.promotion-header p{
+  position: absolute; 
+  top: 30%;
+  left: 22%; 
+  color: black; 
+  font-weight: 900;
+  font-size: 70px; 
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.promotion-description{
+  width: 300px;
+}
+
+.promotion-news{
+  margin-bottom: 50px;
+  border: 2px solid rgb(156, 118, 22);
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.promotion-gallery{
+  padding: 20px;
+}
+

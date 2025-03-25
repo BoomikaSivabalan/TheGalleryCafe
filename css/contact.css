@@ -1,0 +1,64 @@
+.contact-image{
+  display: block;
+}
+
+.contact_des{
+  text-align: center;
+}
+
+.contact_des p{
+  margin-top: 10px;
+}
+
+.contact{
+  padding: 3rem 0 4rem;
+}
+
+.contact .form-group{
+  margin : 2rem 0;
+}
+
+.contact input,
+.contact textarea{
+  border: none;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  padding-bottom: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.contact textarea{
+  height: 200px;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+  outline: none;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.contact button{
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.mailaddress{
+  color: blue;
+  text-decoration: underline;
+}
+
+/* promotion */
+
+.promotion-des{
+  width: 50px;
+}
